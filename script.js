@@ -19,6 +19,20 @@ function appendToResult(value) {
       result.value = 'Error';
     }
   }
+  // ... Function keys calculator ...
+
+function appendToResult(value) {
+  const input = document.getElementById("result");
+  const selectionStart = input.selectionStart;
+  const selectionEnd = input.selectionEnd;
+
+  const beforeCursor = input.value.slice(0, selectionStart);
+  const afterCursor = input.value.slice(selectionEnd);
+
+  input.value = beforeCursor + value + afterCursor;
+  input.setSelectionRange(selectionStart + value.length, selectionStart + value.length);
+  input.focus();
+}
   
   // Allow keyboard inputs
 document.addEventListener("keydown", function (event) {
