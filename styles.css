@@ -5,6 +5,8 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
   }
   
   .calculator {
@@ -28,7 +30,7 @@ body {
   .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+    grid-gap: 11px;
   }
   
   button {
@@ -37,8 +39,25 @@ body {
     border: none;
     background-color: #f0f0f0;
     cursor: pointer;
+    font-weight: bolder;
   }
   
+  .opt {
+    background-color: #91C8E4;
+    color: white;
+    font-weight: bolder;
+  }
+
+  .fun {
+    background-color: #ACFADF;
+    font-weight: bolder;
+  }
+
+  .equal {
+    background-color: #03C988;
+    font-weight: bolder;
+  }
+
   button:hover {
     background-color: #ddd;
   }
