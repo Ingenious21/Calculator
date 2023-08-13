@@ -15,3 +15,22 @@ function calculate() {
     result.value = 'Error';
   }
 }
+// ... (previous code) ...
+
+function deleteLast() {
+    result.value = result.value.slice(0, -1);
+  }
+
+  // Allow keyboard inputs
+document.addEventListener("keydown", function (event) {
+    const key = event.key;
+    if (key === "Enter") {
+      calculate();
+    } else if (key === "Escape") {
+      clearResult();
+    } else if (key === "Backspace") {
+      deleteLast();
+    } else {
+      appendToResult(key);
+    }
+  });
