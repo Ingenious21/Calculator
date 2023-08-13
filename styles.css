@@ -58,7 +58,18 @@ body {
     font-weight: bolder;
   }
 
+  .clear {
+    background-color: transparent;
+  }
+
   button:hover {
     background-color: #ddd;
   }
   
+  .opt:hover {
+    background-color: #085b85;
+  }
+
+  .fun:hover {
+   background-color: #47e6ae;
+  }
